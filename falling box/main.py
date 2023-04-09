@@ -64,6 +64,7 @@ while not game_over:
     # draw screen
     screen.fill(white)
     pygame.draw.rect(screen, black, (player_x, player_y, player_size, player_size))
+    pygame.draw.rect(screen, black, (enemy_x, enemy_y, enemy_size, enemy_size))
 
     # update score
     score_text = font.render("Score: " + str(score), True, black)
